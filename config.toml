@@ -1,0 +1,31 @@
+baseURL = "http://www.xiaolongge.com.cn/"
+languageCode = "en-us" #语言
+title = "小龙哥的技术人生" #博客标题
+theme= "casper"
+paginate = 5 #分页每页记录数
+DisqusShortname = "小龙哥" #评论时显示的名字
+Copyright = "All rights reserved - 2018" #版权
+canonifyurls = true
+pluralizelisttitles = false
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/"
+weight = -120
+[[menu.main]]
+name = "Github repos"
+pre = "<h3>Follow me</h3>"
+url = "https://github.com/xiaolongge904913"
+weight = 100
+
+[params]
+description = "我们这个世界的一个问题是，蠢人信誓旦旦，智人满腹狐疑"
+author = "小龙哥" #文章作者
+authorlocation = "Beijing, China" #作者位置
+authorbio = "Java Engineer, Open source enthusiast."  
+authorwebsite = "https://www.xiaolongge.com.cn/" #作者站点
+logo = "images/头像.jpg" #作者头像
+githubName = "xiaolongge904913" #github用户名
+hideHUGOSupport = false #是否显示Hugo水印
+cover = "images/cover_polenord.jpg"
