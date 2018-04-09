@@ -22,21 +22,21 @@ image: "/images/集群SSH配置/0.jpg"
 [root@hadoop01 ~]# ssh-keygen -t rsa
 ```
 遇到确认,点击回车均可,最后结果如下:
-![1](/images/集群SSH配置/1.png)
+<img src="/images/集群SSH配置/1.png" width = "50%" height = "50%" alt="1" align=center />
 
 3. 将公钥发送至hadoop02
 ```bash
 [root@hadoop01 ~]# ssh-copy-id -i ~/.ssh/id_rsa.pub hadoop02
 ```
 输入hadoop02的密码,点击回车.此时,hadoop01可以免密登录hadoop02,结果如下:
-![2](/images/集群SSH配置/2.png)
- 
+<img src="/images/集群SSH配置/2.png" width = "100%" height = "100%" alt="2" align=center />
+
 4. 验证是否成功
 ```bash
 [root@hadoop01 ~]# ssh hadoop02
 ```
 成功:
-![3](/images/集群SSH配置/3.png)
+<img src="/images/集群SSH配置/3.png" width = "100%" height = "100%" alt="3" align=center />
 
 至此,hadoop01免密登录hadoop02成功.
 
